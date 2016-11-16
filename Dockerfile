@@ -30,3 +30,6 @@ EXPOSE 22
 
 # This will automatically start systemd
 CMD ["/usr/sbin/init"]
+
+# Shutdown systemd in container correctly
+STOPSIGNAL "RTMIN+3"
