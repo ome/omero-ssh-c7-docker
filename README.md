@@ -1,6 +1,9 @@
 omero-ssh-c7
 ============
 
+[![Actions Status](https://github.com/ome/omero-ssh-c7-docker/workflows/Build/badge.svg)](https://github.com/ome/omero-ssh-c7-docker/actions)
+
+
 Docker image for testing OMERO on CentOS 7 with systemd.
 
 To get systemd running on Docker additional arguments are required.
