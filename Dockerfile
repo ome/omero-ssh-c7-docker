@@ -4,7 +4,7 @@ MAINTAINER ome-devel@lists.openmicroscopy.org.uk
 # Required for systemd
 ENV container docker
 
-RUN yum install -y sudo openssh-server openssh-clients && \
+RUN yum update -y && yum install -y ca-certificates sudo openssh-server openssh-clients && \
 	yum clean all
 
 RUN systemctl enable sshd.service
